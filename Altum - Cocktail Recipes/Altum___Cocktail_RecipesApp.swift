@@ -3,10 +3,10 @@
 import SwiftUI
 
 @main
-struct ___PACKAGENAME:identifier___App: App {
+struct Altum___Cocktail_Recipes: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

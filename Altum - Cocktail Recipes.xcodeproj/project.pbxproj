@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E1F9D2D72641F22200401002 /* Altum___Cocktail_RecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2D62641F22200401002 /* Altum___Cocktail_RecipesApp.swift */; };
-		E1F9D2D92641F22200401002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2D82641F22200401002 /* ContentView.swift */; };
+		E1F9D2D92641F22200401002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2D82641F22200401002 /* HomeView.swift */; };
 		E1F9D2DB2641F22400401002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F9D2DA2641F22400401002 /* Assets.xcassets */; };
 		E1F9D2DE2641F22400401002 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F9D2DD2641F22400401002 /* Preview Assets.xcassets */; };
+		E1F9D2E62641F84000401002 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2E52641F84000401002 /* SearchView.swift */; };
+		E1F9D2E82641F85600401002 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2E72641F85600401002 /* MainView.swift */; };
+		E1F9D2EA2641FA7A00401002 /* SavedCocktailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2E92641FA7A00401002 /* SavedCocktailView.swift */; };
+		E1F9D2EC2641FB3000401002 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2EB2641FB3000401002 /* CocktailDetailView.swift */; };
+		E1F9D2EE2641FF1000401002 /* RandomDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2ED2641FF1000401002 /* RandomDrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E1F9D2D32641F22200401002 /* Altum - Cocktail Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Altum - Cocktail Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F9D2D62641F22200401002 /* Altum___Cocktail_RecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Altum___Cocktail_RecipesApp.swift"; sourceTree = "<group>"; };
-		E1F9D2D82641F22200401002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1F9D2D82641F22200401002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E1F9D2DA2641F22400401002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1F9D2DD2641F22400401002 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1F9D2DF2641F22400401002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F9D2E52641F84000401002 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E1F9D2E72641F85600401002 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E1F9D2E92641FA7A00401002 /* SavedCocktailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCocktailView.swift; sourceTree = "<group>"; };
+		E1F9D2EB2641FB3000401002 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
+		E1F9D2ED2641FF1000401002 /* RandomDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				E1F9D2D62641F22200401002 /* Altum___Cocktail_RecipesApp.swift */,
-				E1F9D2D82641F22200401002 /* ContentView.swift */,
+				E1F9D2E72641F85600401002 /* MainView.swift */,
+				E1F9D2D82641F22200401002 /* HomeView.swift */,
+				E1F9D2E52641F84000401002 /* SearchView.swift */,
+				E1F9D2E92641FA7A00401002 /* SavedCocktailView.swift */,
+				E1F9D2EB2641FB3000401002 /* CocktailDetailView.swift */,
+				E1F9D2ED2641FF1000401002 /* RandomDrinkView.swift */,
 				E1F9D2DA2641F22400401002 /* Assets.xcassets */,
 				E1F9D2DF2641F22400401002 /* Info.plist */,
 				E1F9D2DC2641F22400401002 /* Preview Content */,
@@ -138,7 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F9D2D92641F22200401002 /* ContentView.swift in Sources */,
+				E1F9D2EA2641FA7A00401002 /* SavedCocktailView.swift in Sources */,
+				E1F9D2D92641F22200401002 /* HomeView.swift in Sources */,
+				E1F9D2E82641F85600401002 /* MainView.swift in Sources */,
+				E1F9D2EE2641FF1000401002 /* RandomDrinkView.swift in Sources */,
+				E1F9D2EC2641FB3000401002 /* CocktailDetailView.swift in Sources */,
+				E1F9D2E62641F84000401002 /* SearchView.swift in Sources */,
 				E1F9D2D72641F22200401002 /* Altum___Cocktail_RecipesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
