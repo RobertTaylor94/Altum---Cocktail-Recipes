@@ -19,4 +19,3 @@ struct SearchView_Previews: PreviewProvider {
     }
 }
 
-//kjnawkjwkjrkwejnrkjwen
