@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		E1F9D2EE2641FF1000401002 /* RandomDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2ED2641FF1000401002 /* RandomDrinkView.swift */; };
 		E1F9D2F02642B11A00401002 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2EF2642B11A00401002 /* NetworkManager.swift */; };
 		E1F9D2F22642B85500401002 /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2F12642B85500401002 /* DrinkModel.swift */; };
+		E1F9D2F52643011500401002 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E1F9D2F42643011500401002 /* SDWebImageSwiftUI */; };
+		E1F9D2F82643124500401002 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1F9D2F72643124500401002 /* RealmSwift */; };
+		E1F9D2FA2643124500401002 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E1F9D2F92643124500401002 /* Realm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F9D2FA2643124500401002 /* Realm in Frameworks */,
+				E1F9D2F82643124500401002 /* RealmSwift in Frameworks */,
+				E1F9D2F52643011500401002 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +112,11 @@
 			dependencies = (
 			);
 			name = "Altum - Cocktail Recipes";
+			packageProductDependencies = (
+				E1F9D2F42643011500401002 /* SDWebImageSwiftUI */,
+				E1F9D2F72643124500401002 /* RealmSwift */,
+				E1F9D2F92643124500401002 /* Realm */,
+			);
 			productName = "Altum - Cocktail Recipes";
 			productReference = E1F9D2D32641F22200401002 /* Altum - Cocktail Recipes.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +144,10 @@
 				Base,
 			);
 			mainGroup = E1F9D2CA2641F22200401002;
+			packageReferences = (
+				E1F9D2F32643011500401002 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				E1F9D2F62643124500401002 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = E1F9D2D42641F22200401002 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +371,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1F9D2F32643011500401002 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		E1F9D2F62643124500401002 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1F9D2F42643011500401002 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1F9D2F32643011500401002 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		E1F9D2F72643124500401002 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1F9D2F62643124500401002 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		E1F9D2F92643124500401002 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1F9D2F62643124500401002 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1F9D2CB2641F22200401002 /* Project object */;
 }
