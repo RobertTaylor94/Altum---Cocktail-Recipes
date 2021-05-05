@@ -6,29 +6,32 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct SavedCocktailView: View {
+    
+    @State var imageUrl: String = ""
+    
     var body: some View {
-//        NavigationView {
-            VStack(spacing: 10) {
-                Text("Margherita")
-                Image(systemName: "hourglass").resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                Text("Tequila")
-                NavigationLink(
-                    destination: CocktailDetailView(),
-                    label: {
-                        Image(systemName: "info.circle").foregroundColor(.black)
-                    })
+
+                VStack(spacing: 10) {
+                    if imageUrl != "" {
+                        WebImage(url: URL(string: imageUrl)).resizable().frame(width: 100, height: 100).cornerRadius(20)
+                    } else {
+                        Image(systemName: "hourglass").resizable().frame(width: 100, height: 100)
+                    }
+                }
+                .padding()
+                .background(Color("Foreground"))
+                .cornerRadius(20)
+                .foregroundColor(Color("Background"))
             }
-            .padding()
-            .background(Color.purple)
-            .cornerRadius(20)
         }
-    }
-//}
 
 struct SavedCocktailView_Previews: PreviewProvider {
     static var previews: some View {
         SavedCocktailView()
     }
 }
+
+
