@@ -9,26 +9,34 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-//        ZStack {
-//            Image("background").resizable().ignoresSafeArea().aspectRatio(contentMode: .fill)
-            
+
+        NavigationView {
         VStack {
                 Spacer()
-                VStack {
+            VStack(alignment: .leading, spacing: 10) {
                     Text("My Drinks")
+                        .font(.title)
                     ScrollView(.horizontal) {
-                        HStack {
-                            SavedCocktailView()
-                            SavedCocktailView()
-                            SavedCocktailView()
-                            SavedCocktailView()
-                            SavedCocktailView()
-                            SavedCocktailView()
+                        HStack(spacing: 20) {
+                            
+                            VStack {
+                                SavedCocktailView()
+                                NavigationLink(
+                                    destination: CocktailDetailView(),
+                                    label: {
+                                        Text("Margarita")
+                                            .padding()
+                                            .background(Color("Foreground"))
+                                            .cornerRadius(10)
+                                            .foregroundColor(Color("Background"))
+                                    })
+                            }
+                            
                         }
                     }
                 }
                 .padding()
-                .background(Color.black)
+                .background(Image("neon"))
                 .foregroundColor(.white)
                 .cornerRadius(20)
                 
@@ -47,11 +55,12 @@ struct HomeView: View {
                 Spacer()
             }
             .padding()
-            .background(Image("background").resizable().ignoresSafeArea().aspectRatio(contentMode: .fill))
+            .background(Color("Background")).ignoresSafeArea()
         }
+    }
    
     }
-//}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
