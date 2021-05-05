@@ -6,7 +6,7 @@ import SwiftUI
 struct Altum___Cocktail_Recipes: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainView()
         }
     }
 }
