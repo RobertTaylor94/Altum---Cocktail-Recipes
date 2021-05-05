@@ -16,6 +16,8 @@
 		E1F9D2EA2641FA7A00401002 /* SavedCocktailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2E92641FA7A00401002 /* SavedCocktailView.swift */; };
 		E1F9D2EC2641FB3000401002 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2EB2641FB3000401002 /* CocktailDetailView.swift */; };
 		E1F9D2EE2641FF1000401002 /* RandomDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2ED2641FF1000401002 /* RandomDrinkView.swift */; };
+		E1F9D2F02642B11A00401002 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2EF2642B11A00401002 /* NetworkManager.swift */; };
+		E1F9D2F22642B85500401002 /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9D2F12642B85500401002 /* DrinkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E1F9D2E92641FA7A00401002 /* SavedCocktailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCocktailView.swift; sourceTree = "<group>"; };
 		E1F9D2EB2641FB3000401002 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
 		E1F9D2ED2641FF1000401002 /* RandomDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDrinkView.swift; sourceTree = "<group>"; };
+		E1F9D2EF2642B11A00401002 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E1F9D2F12642B85500401002 /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				E1F9D2D62641F22200401002 /* Altum___Cocktail_RecipesApp.swift */,
+				E1F9D2EF2642B11A00401002 /* NetworkManager.swift */,
+				E1F9D2F12642B85500401002 /* DrinkModel.swift */,
 				E1F9D2E72641F85600401002 /* MainView.swift */,
 				E1F9D2D82641F22200401002 /* HomeView.swift */,
 				E1F9D2E52641F84000401002 /* SearchView.swift */,
@@ -157,9 +163,11 @@
 				E1F9D2D92641F22200401002 /* HomeView.swift in Sources */,
 				E1F9D2E82641F85600401002 /* MainView.swift in Sources */,
 				E1F9D2EE2641FF1000401002 /* RandomDrinkView.swift in Sources */,
+				E1F9D2F02642B11A00401002 /* NetworkManager.swift in Sources */,
 				E1F9D2EC2641FB3000401002 /* CocktailDetailView.swift in Sources */,
 				E1F9D2E62641F84000401002 /* SearchView.swift in Sources */,
 				E1F9D2D72641F22200401002 /* Altum___Cocktail_RecipesApp.swift in Sources */,
+				E1F9D2F22642B85500401002 /* DrinkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
