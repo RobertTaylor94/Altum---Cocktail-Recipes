@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    @ObservedObject var networkManager = NetworkManager(search: "")
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(networkManager.drinks) { i in
+            Text(i.strDrink)
+        }.onAppear(){
+            self.networkManager.getJsonData(string: "margarita")
+        }
     }
 }
 
